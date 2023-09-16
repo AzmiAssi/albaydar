@@ -111,8 +111,8 @@ class _FeedBackState extends State<FeedBack> {
           title: 'Done',
           desc: 'Your Message Sended',
           btnOkText: 'ok',
-          onDissmissCallback: (type) {
-            if (type != DismissType.BTN_OK) {
+          onDismissCallback: (type) {
+            if (type != DismissType.btnOk) {
               // Navigator.pop(context);
             }
           },
@@ -129,8 +129,8 @@ class _FeedBackState extends State<FeedBack> {
             title: 'Unauthorized',
             desc: 'Your session has been expired....',
             btnCancelText: 'ok',
-            onDissmissCallback: (type) {
-              if (type != DismissType.BTN_OK) {
+            onDismissCallback: (type) {
+              if (type != DismissType.btnOk) {
                 Navigator.pop(context);
               }
             },

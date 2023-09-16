@@ -374,8 +374,8 @@ class _SignInScreenState extends State<SignInScreen> {
             title: 'Worning',
             desc: 'Encorrect Email Or Password',
             btnCancelText: 'ok',
-            onDissmissCallback: (type) {
-              if (type != DismissType.BTN_OK) {}
+            onDismissCallback: (type) {
+              if (type != DismissType.btnOk) {}
             },
             btnCancelOnPress: () {},
           ).show();

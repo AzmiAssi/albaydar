@@ -196,8 +196,8 @@ class ProductDetailScreen extends StatelessWidget {
                               title: 'Added Successfully',
                               desc: 'Your Product Added To Cart',
                               btnOkText: 'ok',
-                              onDissmissCallback: (type) {
-                                if (type != DismissType.BTN_OK) {
+                              onDismissCallback: (type) {
+                                if (type != DismissType.btnOk) {
                                   Navigator.pop(context);
                                 }
                               },

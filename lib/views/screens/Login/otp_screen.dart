@@ -222,8 +222,8 @@ class _OtpScreenState extends State<OtpScreen> {
             title: 'Done',
             desc: 'Your Account Created Successfully',
             btnOkText: 'ok',
-            onDissmissCallback: (type) {
-              if (type != DismissType.BTN_OK) {}
+            onDismissCallback: (type) {
+              if (type != DismissType.btnOk) {}
             },
             btnOkOnPress: () {
               pop(context);
@@ -240,8 +240,8 @@ class _OtpScreenState extends State<OtpScreen> {
             title: 'Worning',
             desc: 'Something Wrong',
             btnCancelText: 'ok',
-            onDissmissCallback: (type) {
-              if (type != DismissType.BTN_OK) {}
+            onDismissCallback: (type) {
+              if (type != DismissType.btnOk) {}
             },
             btnCancelOnPress: () {},
           ).show();

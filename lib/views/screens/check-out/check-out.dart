@@ -373,8 +373,8 @@ class _CheckOutState extends State<CheckOut> {
             title: 'Unauthorized',
             desc: 'Your session has been expired....',
             btnCancelText: 'ok',
-            onDissmissCallback: (type) {
-              if (type != DismissType.BTN_OK) {
+            onDismissCallback: (type) {
+              if (type != DismissType.btnOk) {
                 Navigator.pop(context);
               }
             },
@@ -458,8 +458,8 @@ class _CheckOutState extends State<CheckOut> {
             title: 'Unauthorized',
             desc: 'Your session has been expired....',
             btnCancelText: 'ok',
-            onDissmissCallback: (type) {
-              if (type != DismissType.BTN_OK) {
+            onDismissCallback: (type) {
+              if (type != DismissType.btnOk) {
                 Navigator.pop(context);
               }
             },
